@@ -25,7 +25,7 @@ const sequelize = new Sequelize(
  'root',
  'root',
   {
-    host: localhost,
+    host: "localhost",
     dialect: 'mysql'
   }
 );
@@ -42,3 +42,4 @@ sequelize.authenticate().then(() => {
     console.error('Unable to create table: ', error);
  });
  
+ module.exports = sequelize;
